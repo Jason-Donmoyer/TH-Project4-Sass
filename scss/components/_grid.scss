@@ -6,10 +6,22 @@
 
 // Grid Row
 .grid__row{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    @include flex;
     flex-direction: column;
+}
+
+.grid__row div {
+    width: 100%;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.link {
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 
