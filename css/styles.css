@@ -310,6 +310,7 @@ template {
   font-family: "Helvetica Neue", san-serif; }
 
 p {
+  line-height: 1.4em;
   margin-bottom: 1.25em;
   color: #8a8a8a;
   text-align: left; }
@@ -326,8 +327,9 @@ a {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  flex-direction: column; }
+  flex-basis: 100%; }
 
 .grid__row div {
   width: 100%;
@@ -341,14 +343,18 @@ a {
   align-items: center;
   justify-content: center; }
 
+.card {
+  padding: 4em 0; }
+
 .img--logo {
   padding: 2em 0; }
 
 .nav {
   display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 100%;
   width: 100%;
   margin-bottom: 2em; }
 
@@ -367,5 +373,9 @@ a {
 .nav__item a {
   color: #8a8a8a;
   padding: .75em; }
+
+.headline--primary {
+  color: #58e1c1;
+  padding-left: .75em; }
 
 /*# sourceMappingURL=styles.css.map */

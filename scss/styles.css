@@ -350,6 +350,7 @@ template {
 }
 
 p {
+  line-height: 1.4em;
   margin-bottom: 1.25em;
   color: #8a8a8a;
   text-align: left;
@@ -373,13 +374,15 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .grid__row div {
@@ -406,6 +409,10 @@ a {
           justify-content: center;
 }
 
+.card {
+  padding: 4em 0;
+}
+
 .img--logo {
   padding: 2em 0;
 }
@@ -414,14 +421,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 100%;
   margin-bottom: 2em;
 }
@@ -446,5 +456,10 @@ a {
 .nav__item a {
   color: #8a8a8a;
   padding: .75em;
+}
+
+.headline--primary {
+  color: #58e1c1;
+  padding-left: .75em;
 }
 /*# sourceMappingURL=styles.css.map */
