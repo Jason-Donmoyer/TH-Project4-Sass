@@ -413,6 +413,10 @@ a {
   padding: 4em 0;
 }
 
+.card .link {
+  display: inline;
+}
+
 .img--logo {
   padding: 2em 0;
 }
@@ -461,5 +465,11 @@ a {
 .headline--primary {
   color: #58e1c1;
   padding-left: .75em;
+}
+
+.headline--secondary {
+  color: #8a8a8a;
+  font-size: 1em;
+  font-weight: inherit;
 }
 /*# sourceMappingURL=styles.css.map */
