@@ -1,7 +1,18 @@
-@mixin flex {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 100%;
+@mixin flex(
+    $disp: flex,
+    $wrap: null,
+    $dir: null,
+    $just: null,
+    $bas: null
+    ) {   
+    display: $disp;
+    flex-wrap: $wrap;
+    flex-direction: $dir;
+    justify-content: $just;
+    flex-basis: $bas;
 }
+
+// wrap
+//column
+//center
+//100%

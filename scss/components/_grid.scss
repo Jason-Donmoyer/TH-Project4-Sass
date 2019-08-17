@@ -6,22 +6,26 @@
 
 // Grid Row
 .grid__row{
-    @include flex;
+    @include flex(
+        $wrap: wrap,
+        $dir: column,
+        $just: center
+    );
 }
 
 .grid__row div {
-    width: 100%;
-    flex-basis: 100%;
-    justify-content: center;
+    width: 100%;   
 }
 
 .link {
-    display: flex;
-    width: 100%;
-    flex-basis: 100%;
+    @include flex (
+        $bas: 100%,
+        $just: center
+    );
     align-items: center;
-    justify-content: center;
 }
+
+
 
 .card {
     padding: 4em 0;
@@ -29,6 +33,7 @@
 
 .card .link {
     display: inline;
+    color: $color-default;
 }
 
 

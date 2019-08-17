@@ -1,6 +1,11 @@
 
 .nav {
-    @include flex;
+    @include flex(
+        $wrap: wrap,
+        $dir: column,
+        $just: center,
+        $bas: 100%
+    );
     width: 100%;
     margin-bottom: 2em;
 }
@@ -12,6 +17,9 @@
     height: 2.5em;
     padding: .5em 0;
     margin: .25em 0; 
+    a {
+        @extend %a;
+    }
     &:hover {
         background-color: $color-primary;
         a { 
@@ -20,7 +28,3 @@
     } 
 }
 
-.nav__item a {
-    color: $color-font;
-    padding: .75em;
-}

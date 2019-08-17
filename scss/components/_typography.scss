@@ -8,3 +8,17 @@
     font-size: 1em;
     font-weight: inherit;
 }
+
+.blockquote {
+    margin-left: .4em;
+    margin-right: .4em;
+    text-align: left;
+    font-style: italic;
+    line-height: 1.3em;
+    color: darken($color-font, 2%);
+    font-size: 1.5em;
+    padding-left: .7em;
+    border-left: 10px solid $color-primary;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
