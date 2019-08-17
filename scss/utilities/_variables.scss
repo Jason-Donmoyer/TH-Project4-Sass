@@ -8,6 +8,8 @@ $color-black: #000;
 $color-font: #8a8a8a;
 $color-primary: #58e1c1;
 
+$font-main: 'Helvetica Neue', san-serif;
+
 // Primary and Button Colors
 $theme--colors: (
     'default':  #51ddfc,
@@ -28,4 +30,15 @@ $layout--colors: (
     'col-3':#deb2ee
 );
 
-$font-main: 'Helvetica Neue', san-serif;
+//Gutter
+$gutter: 22px;
+$max-width: 1400px;
+
+//Breakpoints
+
+$breakpoints: (
+    'sm': 480px,
+    'lg': 769px
+);
+
+

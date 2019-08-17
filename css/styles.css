@@ -19,7 +19,7 @@
   padding: 2em 0; }
 
 .img--frame {
-  border: 1px solid #8a8a8a;
+  border: 1px solid #cacaca;
   padding: .75em; }
 
 .btn--default, .btn--success, .btn--warning, .btn--info, .btn--error {
@@ -353,13 +353,14 @@ p {
   text-align: left; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  height: 100%; }
 
 a {
   text-decoration: none; }
 
 .container {
-  padding: 2em; }
+  padding: 22px; }
 
 .grid__row {
   display: flex;
@@ -367,10 +368,16 @@ a {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 2em; }
+  @media (min-width: 769px) {
+    .grid__row {
+      flex-direction: row; } }
 
 .grid__row div {
   display: flex;
   flex-direction: column; }
+
+.grid__row div nav {
+  height: 100%; }
 
 .link {
   display: flex;
@@ -390,18 +397,39 @@ a {
   flex-direction: column;
   justify-content: center; }
 
+@media (min-width: 769px) {
+  .grid__col--12 {
+    flex-basis: 96.8571428571%; } }
 .grid__col--12.theme__colors {
   background-color: #80e8d1; }
+@media (min-width: 769px) {
+  .grid__col--8 {
+    flex-basis: 61.9523809524%; } }
 .grid__col--8.theme__colors {
   background-color: #fd9f85; }
+@media (min-width: 769px) {
+  .grid__col--7 {
+    flex-basis: 52.9455782313%; } }
 .grid__col--7.theme__colors {
   background-color: #ec9fa3; }
+@media (min-width: 769px) {
+  .grid__col--6 {
+    flex-basis: 43.7142857143%; } }
 .grid__col--6.theme__colors {
   background-color: #3fabca; }
+@media (min-width: 769px) {
+  .grid__col--5 {
+    flex-basis: 34.1238095238%; } }
 .grid__col--5.theme__colors {
   background-color: #88d9a0; }
+@media (min-width: 769px) {
+  .grid__col--4 {
+    flex-basis: 23.9047619048%; } }
 .grid__col--4.theme__colors {
   background-color: #7ee6fd; }
+@media (min-width: 769px) {
+  .grid__col--3 {
+    flex-basis: 12.4285714286%; } }
 .grid__col--3.theme__colors {
   background-color: #deb2ee; }
 
@@ -416,6 +444,13 @@ a {
   flex-basis: 100%;
   width: 100%;
   margin-bottom: 2em; }
+  @media (min-width: 769px) {
+    .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      flex-basis: 4.2857142857%;
+      align-items: center; } }
 
 .nav__item:hover {
   background-color: #58e1c1; }
@@ -454,14 +489,6 @@ a {
 
 .form__input {
   display: none; }
-
-.btn--default, .btn--success, .btn--warning, .btn--info, .btn--error {
-  border-width: 0;
-  width: 90%;
-  color: #fff;
-  align-self: center;
-  margin-bottom: 1em;
-  text-transform: uppercase; }
 
 .btn--default {
   background-color: #51ddfc; }

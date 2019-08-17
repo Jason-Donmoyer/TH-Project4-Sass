@@ -1,7 +1,7 @@
 // Container
 
 .container {
-    padding: 2em;
+    padding: $gutter;
 }
 
 // Grid Row
@@ -12,12 +12,22 @@
         $just: center
     );
     margin-bottom: 2em;
+    @include med-quer('lg') {
+        flex-direction: row;
+    }
 }
 
 .grid__row div {
     @include flex(
        $dir: column 
-    );   
+    ); 
+    // @include med-quer('lg') {
+    //     flex-basis: per-line(2);
+    // }  
+}
+
+.grid__row div nav {
+    height: 100%;
 }
 
 .link {
@@ -27,7 +37,6 @@
     );
     align-items: center;
 }
-
 
 
 .card {
@@ -49,29 +58,64 @@
 
 
 .grid__col {
+    &--12 {
+        @include med-quer('lg') {
+            flex-basis: per-line(12/12);
+        }
+    }
     &--12.theme__colors {
         @extend %grid__col;
         background-color: map-get($layout--colors, 'col-12'); 
+    }
+    &--8 {
+        @include med-quer('lg') {
+            flex-basis: per-line(12/8);
+        }
     }
     &--8.theme__colors {
         @extend %grid__col;
         background-color: map-get($layout--colors, 'col-8'); 
     }
+    &--7 {
+        @include med-quer('lg') {
+            flex-basis: per-line(12/7);
+        }
+    }
     &--7.theme__colors {
         @extend %grid__col;
         background-color: map-get($layout--colors, 'col-7'); 
+    }
+    &--6 {
+        @include med-quer('lg') {
+            flex-basis: per-line(12/6);
+        }
     }
     &--6.theme__colors {
         @extend %grid__col;
         background-color: map-get($layout--colors, 'col-6'); 
     }
+    &--5 {
+        @include med-quer('lg') {
+            flex-basis: per-line(12/5);
+        }
+    }
     &--5.theme__colors {
         @extend %grid__col;
         background-color: map-get($layout--colors, 'col-5'); 
     }
+    &--4 {
+        @include med-quer('lg') {
+            flex-basis: per-line(12/4);
+        }
+    }
     &--4.theme__colors {
         @extend %grid__col;
         background-color: map-get($layout--colors, 'col-4'); 
+    }
+    &--3 {
+        @include med-quer('lg') {
+            flex-basis: per-line(12/3);
+        }
     }
     &--3.theme__colors {
         @extend %grid__col;

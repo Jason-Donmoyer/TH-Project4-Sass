@@ -8,6 +8,14 @@
     );
     width: 100%;
     margin-bottom: 2em;
+    @include med-quer('lg') {
+        @include flex(
+            $wrap: nowrap,
+            $dir: row,
+            $bas: per-line(5)
+        );
+        align-items: center;
+    }
 }
 
 .nav__item {
