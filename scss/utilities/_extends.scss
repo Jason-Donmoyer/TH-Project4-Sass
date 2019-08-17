@@ -44,6 +44,10 @@
     align-self: center;
     margin-bottom: 1em;
     text-transform: uppercase; 
+    @include med-quer('lg') {
+        margin-left:.5em;
+        margin-right: .5em;
+    }
 }
 
 // Grid Col

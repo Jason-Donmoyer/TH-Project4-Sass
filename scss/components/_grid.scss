@@ -17,13 +17,22 @@
     }
 }
 
-.grid__row div {
+// .grid__row div {
+//     @include flex(
+//        $dir: column 
+//     );   
+// }
+
+.grid__col--12,
+.grid__col--8,
+.grid__col--7,
+.grid__col--6,
+.grid__col--5,
+.grid__col--4,
+.grid__col--3 {
     @include flex(
        $dir: column 
-    ); 
-    // @include med-quer('lg') {
-    //     flex-basis: per-line(2);
-    // }  
+    );
 }
 
 .grid__row div nav {
@@ -61,6 +70,7 @@
     &--12 {
         @include med-quer('lg') {
             flex-basis: per-line(12/12);
+            flex-direction: row;
         }
     }
     &--12.theme__colors {
