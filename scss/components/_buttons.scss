@@ -1,0 +1,32 @@
+%btn {
+    @extend %nav--item;
+    border-width: 0;
+    
+    color: $color-white;
+}
+
+.btn {
+    &--default {
+        @extend %btn;
+        background-color: map-get($theme--colors, 'default');
+    }
+    &--success {
+        @extend %btn;
+        background-color: map-get($theme--colors, 'success');
+    }
+    &--warning {
+        @extend %btn;
+        background-color: map-get($theme--colors, 'warning');
+    }
+    &--info {
+        @extend %btn;
+        background-color: map-get($theme--colors, 'info');
+    }
+    &--error {
+        @extend %btn;
+        background-color: map-get($theme--colors, 'error');
+    }
+}
+
+
+

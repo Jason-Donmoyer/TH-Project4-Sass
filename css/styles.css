@@ -1,7 +1,7 @@
 .headline--secondary {
   color: #8a8a8a; }
 
-.nav__item {
+.nav__item, .btn--default, .btn--success, .btn--warning, .btn--info, .btn--error {
   border-radius: 7px;
   text-align: center;
   width: 100%;
@@ -421,5 +421,20 @@ a {
 
 .form__input {
   display: none; }
+
+.btn--default, .btn--success, .btn--warning, .btn--info, .btn--error {
+  border-width: 0;
+  color: #fff; }
+
+.btn--default {
+  background-color: #51ddfc; }
+.btn--success {
+  background-color: #63cc82; }
+.btn--warning {
+  background-color: #fd7856; }
+.btn--info {
+  background-color: #927bc1; }
+.btn--error {
+  background-color: #e5747a; }
 
 /*# sourceMappingURL=styles.css.map */

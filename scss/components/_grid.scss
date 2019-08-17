@@ -33,7 +33,7 @@
 
 .card .link {
     display: inline;
-    color: $color-default;
+    color: map-get($theme--colors, 'default');
 }
 
 .form {
