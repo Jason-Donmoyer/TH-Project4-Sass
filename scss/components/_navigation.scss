@@ -11,12 +11,7 @@
 }
 
 .nav__item {
-    border-radius: 7px;
-    text-align: center;
-    width: 100%;
-    height: 2.5em;
-    padding: .5em 0;
-    margin: .25em 0; 
+    @extend %nav--item;
     a {
         @extend %a;
     }

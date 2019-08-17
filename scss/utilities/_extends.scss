@@ -1,6 +1,34 @@
-// Placeholders?
+// Placeholders
 
+
+//Headlines
+%headline {
+    color: $color-font;
+}
+
+//Navigation
+%nav--item {
+    border-radius: 7px;
+    text-align: center;
+    width: 100%;
+    height: 2.5em;
+    padding: .5em 0;
+    margin: .25em 0; 
+}
+
+// Links
 %a {
     color: $color-font;
+    padding: .75em;
+}
+
+
+//Images
+%img {
+    padding: 2em 0;
+}
+
+%img--frame {
+    border: 1px solid $color-font;
     padding: .75em;
 }

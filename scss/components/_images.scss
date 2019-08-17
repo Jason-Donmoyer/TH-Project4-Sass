@@ -1,5 +1,15 @@
 
 
 .img--logo {
-    padding: 2em 0;
+    @extend %img;
+}
+
+.img--avatar {
+    @extend %img;
+    align-self: center;
+}
+
+.img--frame {
+    @extend %img;
+    @extend %img--frame;
 }

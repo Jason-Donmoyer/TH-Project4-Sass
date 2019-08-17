@@ -1,0 +1,12 @@
+.form__label--hidden {
+    color: darken($color-font, 25%);
+    text-align: left;
+    padding-left: .4em;
+    padding-bottom: .75em;
+    margin-bottom: 1.6em;
+    border-bottom: 7.5px solid $color-primary;
+}
+
+.form__input {
+    display: none;
+}

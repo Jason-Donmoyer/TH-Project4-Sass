@@ -36,6 +36,13 @@
     color: $color-default;
 }
 
+.form {
+    @include flex(
+        $dir: column,
+        $just: center
+    );
+}
+
 
 
 
