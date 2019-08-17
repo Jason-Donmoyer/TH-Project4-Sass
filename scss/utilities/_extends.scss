@@ -56,4 +56,8 @@
     text-align: left;
     padding-left: .5em;
     color: $color-font;
+    @include med-quer('lg') {
+        margin-left: .5em;
+        margin-right: .5em;
+    }
 }
