@@ -1,7 +1,7 @@
 // Container
 
 .container {
-    padding: 2em 2.25em;
+    padding: 2em;
 }
 
 // Grid Row
@@ -11,10 +11,13 @@
         $dir: column,
         $just: center
     );
+    margin-bottom: 2em;
 }
 
 .grid__row div {
-    width: 100%;   
+    @include flex(
+       $dir: column 
+    );   
 }
 
 .link {
@@ -28,7 +31,7 @@
 
 
 .card {
-    padding: 4em 0;
+    padding: .4em 0;
 }
 
 .card .link {
@@ -42,6 +45,41 @@
         $just: center
     );
 }
+
+
+
+.grid__col {
+    &--12.theme__colors {
+        @extend %grid__col;
+        background-color: map-get($layout--colors, 'col-12'); 
+    }
+    &--8.theme__colors {
+        @extend %grid__col;
+        background-color: map-get($layout--colors, 'col-8'); 
+    }
+    &--7.theme__colors {
+        @extend %grid__col;
+        background-color: map-get($layout--colors, 'col-7'); 
+    }
+    &--6.theme__colors {
+        @extend %grid__col;
+        background-color: map-get($layout--colors, 'col-6'); 
+    }
+    &--5.theme__colors {
+        @extend %grid__col;
+        background-color: map-get($layout--colors, 'col-5'); 
+    }
+    &--4.theme__colors {
+        @extend %grid__col;
+        background-color: map-get($layout--colors, 'col-4'); 
+    }
+    &--3.theme__colors {
+        @extend %grid__col;
+        background-color: map-get($layout--colors, 'col-3'); 
+    }
+}
+
+
 
 
 
